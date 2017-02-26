@@ -1,0 +1,11 @@
+applications:
+- path: target/JavaCloudantApp.war
+  memory: 512M
+  instances: 2
+  domain: mybluemix.net
+  name: PruebaBoilerplateOscarcc
+  host: PruebaBoilerplateOscarcc
+  disk_quota: 1024M
+  services:
+  - availability-monitoring-auto
+  - PruebaBoilerplateOscarcc-cloudantNoSQLDB
